@@ -13,7 +13,7 @@ public abstract class Ufficiale {
 	}
 
 	public void processaRichiestaStipendio(int importo) {
-		if (importo >= stipendio) {
+		if (importo <= stipendio) {
 			approvaStipendio();
 		} else if (superiore != null) {
 			superiore.processaRichiestaStipendio(importo);

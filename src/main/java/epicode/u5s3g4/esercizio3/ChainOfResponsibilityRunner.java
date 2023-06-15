@@ -19,11 +19,11 @@ public class ChainOfResponsibilityRunner implements CommandLineRunner {
 		tenente.setSuperiore(colonnello);
 		colonnello.setSuperiore(generale);
 
-		int importoRichiesto = 5000;
+		int importoRichiesto = 2000;
 
 		System.out.println();
 		System.out.println("------------------------- Chain of Responsability Runner -------------------------");
-		generale.processaRichiestaStipendio(importoRichiesto);
+		capitano.processaRichiestaStipendio(importoRichiesto);
 	}
 
 }
